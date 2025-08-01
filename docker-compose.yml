@@ -1,4 +1,13 @@
 services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-poc
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/certs:/etc/nginx/certs
+
   mongo:
     image: mongo:7.0
     container_name: mongo

@@ -1,4 +1,4 @@
-package f6.poc.WebFluxTest.Entity;
+package f6.poc.Domain.WebFluxTest.Entity;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

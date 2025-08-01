@@ -1,6 +1,6 @@
-package f6.poc.WebFluxTest.Repository;
+package f6.poc.Domain.WebFluxTest.Repository;
 
-import f6.poc.WebFluxTest.Entity.User;
+import f6.poc.Domain.WebFluxTest.Entity.User;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import reactor.core.publisher.Flux;
 

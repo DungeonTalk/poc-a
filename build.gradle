@@ -19,17 +19,7 @@ repositories {
 
 dependencies {
 
-	/* Lombok */
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-
-	// WebFlux 스타터
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-
-	// Mongo DB
-	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
-
-	// R2DBC를 사용할 경우 (선택)
+	// R2DBC
 	implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
 	runtimeOnly 'io.r2dbc:r2dbc-h2' // or r2dbc-mysql, r2dbc-postgresql 등
 
@@ -39,6 +29,21 @@ dependencies {
 
 	// 기존 JUnit 설정
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// WebFlux 스타터
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+	// Mongo DB
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+
+	// 웹 소켓
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.springframework:spring-messaging'
+
 }
 
 tasks.named('test') {

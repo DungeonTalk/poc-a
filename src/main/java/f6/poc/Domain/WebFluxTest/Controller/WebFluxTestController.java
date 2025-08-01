@@ -1,7 +1,7 @@
-package f6.poc.WebFluxTest.Controller;
+package f6.poc.Domain.WebFluxTest.Controller;
 
-import f6.poc.WebFluxTest.Entity.User;
-import f6.poc.WebFluxTest.Repository.UserRepository;
+import f6.poc.Domain.WebFluxTest.Entity.User;
+import f6.poc.Domain.WebFluxTest.Repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
